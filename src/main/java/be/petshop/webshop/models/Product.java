@@ -1,9 +1,8 @@
 package be.petshop.webshop.models;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
+import javax.persistence.*;
 
 @Entity
 public class Product {
@@ -14,18 +13,11 @@ public class Product {
     private String name;
     private int stock;
     private String description;
-    private int primary_pictureID;
-    private int locationID;
-    private int manufacturerID;
+    private String picture;
 
-    public Product(String name, int stock, String description, int primary_pictureID, int locationID, int manufacturerID) {
-        this.name = name;
-        this.stock = stock;
-        this.description = description;
-        this.primary_pictureID = primary_pictureID;
-        this.locationID = locationID;
-        this.manufacturerID = manufacturerID;
-    }
+    @ManyToOne
+    @JoinColumn(name = "category", nullable = false)
+    private Category category;
 
     public Product() {
     }
@@ -62,27 +54,19 @@ public class Product {
         this.description = description;
     }
 
-    public int getPrimary_pictureID() {
-        return primary_pictureID;
+    public String getPicture() {
+        return picture;
     }
 
-    public void setPrimary_pictureID(int primary_pictureID) {
-        this.primary_pictureID = primary_pictureID;
+    public void setPicture(String picture) {
+        this.picture = picture;
     }
 
-    public int getLocationID() {
-        return locationID;
+    public Category getCategory() {
+        return category;
     }
 
-    public void setLocationID(int locationID) {
-        this.locationID = locationID;
-    }
-
-    public int getManufacturerID() {
-        return manufacturerID;
-    }
-
-    public void setManufacturerID(int manufacturerID) {
-        this.manufacturerID = manufacturerID;
+    public void setCategory(Category category) {
+        this.category = category;
     }
 }

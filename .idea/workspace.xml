@@ -2,14 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="80dde474-d274-4f02-9900-36df21b362a4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_8_0_22.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/be/petshop/webshop/controllers/ProductController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/be/petshop/webshop/models/Product.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/be/petshop/webshop/models/ProductDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_validation_jakarta_validation_api_2_0_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_validator_hibernate_validator_6_1_6_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_validation_2_4_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/be/petshop/webshop/controllers/CategoryController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/be/petshop/webshop/controllers/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/be/petshop/webshop/daos/CategoryDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/be/petshop/webshop/daos/ShoppingcartDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/be/petshop/webshop/daos/UserDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/be/petshop/webshop/models/Category.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/be/petshop/webshop/models/Shoppingcart.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/be/petshop/webshop/models/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/be/petshop/webshop/controllers/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/be/petshop/webshop/controllers/ProductController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/be/petshop/webshop/models/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/be/petshop/webshop/models/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/be/petshop/webshop/models/ProductDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/be/petshop/webshop/daos/ProductDAO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/webshop.iml" beforeDir="false" afterPath="$PROJECT_DIR$/webshop.iml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -21,6 +30,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -41,6 +51,11 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="be.petshop.webshop.models" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -77,6 +92,8 @@
       <workItem from="1610368240073" duration="1229000" />
       <workItem from="1610483740548" duration="2485000" />
       <workItem from="1610553872326" duration="4775000" />
+      <workItem from="1610639852740" duration="8469000" />
+      <workItem from="1610809582558" duration="3705000" />
     </task>
     <servers />
   </component>
