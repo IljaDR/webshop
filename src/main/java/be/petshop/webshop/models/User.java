@@ -4,6 +4,8 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.Pattern;
 
 @Entity
 public class User {
@@ -12,20 +14,19 @@ public class User {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private int userID;
     private String hash;
+    private String password;
+
+    @NotBlank(message = "Name cannot be empty.")
     private String first_name;
+
+    @NotBlank(message = "Name cannot be empty.")
     private String family_name;
-    private String email_address;
+
+    @Pattern(regexp="^[A-Z0-9+_.-]+@[A-Z0-9.-]+$")
+    @NotBlank(message = "Name cannot be empty.")
+    private String emailaddress;
     private String address;
     private String payment_info;
-
-    public User(String token, String first_name, String family_name, String email_address, String address, String payment_info) {
-        this.hash = token;
-        this.first_name = first_name;
-        this.family_name = family_name;
-        this.email_address = email_address;
-        this.address = address;
-        this.payment_info = payment_info;
-    }
 
     public User() {
     }
@@ -46,6 +47,14 @@ public class User {
         this.hash = hash;
     }
 
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
     public String getFirst_name() {
         return first_name;
     }
@@ -62,12 +71,12 @@ public class User {
         this.family_name = family_name;
     }
 
-    public String getEmail_address() {
-        return email_address;
+    public String getEmailaddress() {
+        return emailaddress;
     }
 
-    public void setEmail_address(String email_address) {
-        this.email_address = email_address;
+    public void setEmailaddress(String emailaddress) {
+        this.emailaddress = emailaddress;
     }
 
     public String getAddress() {

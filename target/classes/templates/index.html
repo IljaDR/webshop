@@ -4,7 +4,7 @@
 
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 
-<head th:replace="fragments :: header('Products')">
+<head th:replace="fragments :: header">
 </head>
 
 <body>
@@ -18,7 +18,7 @@
 
       <div class="col-lg-3">
 
-        <h1 class="my-4">Shop Name</h1>
+        <h1 class="my-4">Web Petshop</h1>
         <div class="list-group">
           <a href="#" th:href="@{'?category=' + ${category.categoryID}}" class="list-group-item" th:each="category: ${Categories}" th:text="${category.name}"></a>
         </div>
@@ -56,12 +56,9 @@
   <!-- /.container -->
 
   <!-- Footer -->
-  <footer class="py-5 bg-dark">
-    <div class="container">
-      <p class="m-0 text-center text-white">Copyright &copy; Your Website 2020</p>
-    </div>
-    <!-- /.container -->
-  </footer>
+<footer th:replace="fragments :: footing">
+
+</footer>
 
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>

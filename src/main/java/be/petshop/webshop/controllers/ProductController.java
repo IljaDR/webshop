@@ -27,6 +27,7 @@ public class ProductController {
     public String index(@RequestParam(value = "category", required = false) String category, ModelMap modelMap){
         List<Product> products = null;
         List<Category> categories = categoryDAO.findAll();
+        //If category's not null, this means a parameter was given and thus a specific category is requested
         if(category != null){
             List<Category> categoryList = new ArrayList<>();
             categoryList.add(categoryDAO.getByCategoryID(Integer.parseInt(category)));
