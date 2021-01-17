@@ -2,23 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="80dde474-d274-4f02-9900-36df21b362a4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_validation_jakarta_validation_api_2_0_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_validator_hibernate_validator_6_1_6_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_validation_2_4_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/be/petshop/webshop/controllers/CategoryController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/be/petshop/webshop/controllers/UserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/be/petshop/webshop/daos/CategoryDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/be/petshop/webshop/daos/ShoppingcartDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/be/petshop/webshop/daos/UserDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/be/petshop/webshop/models/Category.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/be/petshop/webshop/models/Shoppingcart.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/be/petshop/webshop/models/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/fragments.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/be/petshop/webshop/controllers/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/be/petshop/webshop/controllers/ProductController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/be/petshop/webshop/daos/CategoryDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/be/petshop/webshop/daos/CategoryDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/be/petshop/webshop/daos/ProductDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/be/petshop/webshop/daos/ProductDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/be/petshop/webshop/models/Category.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/be/petshop/webshop/models/Category.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/be/petshop/webshop/models/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/be/petshop/webshop/models/Product.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/be/petshop/webshop/models/ProductDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/be/petshop/webshop/daos/ProductDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/be/petshop/webshop/models/Shoppingcart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/be/petshop/webshop/models/Shoppingcart.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/webshop.iml" beforeDir="false" afterPath="$PROJECT_DIR$/webshop.iml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -32,6 +25,7 @@
       <list>
         <option value="Interface" />
         <option value="Class" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -43,6 +37,7 @@
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelWidth0" value="75" />
@@ -51,10 +46,18 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.46896553" />
+    <property name="restartRequiresConfirmation" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="be.petshop.webshop.models" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\School\2020-2021\Application Frameworks\Werkstuk\webshop\src\main\resources\templates" />
+      <recent name="E:\School\2020-2021\Application Frameworks\Werkstuk\webshop\src\main\resources\static\css" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -93,7 +96,8 @@
       <workItem from="1610483740548" duration="2485000" />
       <workItem from="1610553872326" duration="4775000" />
       <workItem from="1610639852740" duration="8469000" />
-      <workItem from="1610809582558" duration="3705000" />
+      <workItem from="1610809582558" duration="8423000" />
+      <workItem from="1610880877381" duration="8734000" />
     </task>
     <servers />
   </component>

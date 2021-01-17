@@ -9,7 +9,8 @@ import java.util.List;
 public interface ProductDAO extends CrudRepository<Product, Integer> {
     List<Product> findAll();
 
-    List<Product> findByCategory(Category category);
+    List<Product> findByCategoriesIn(List<Category> categories);
+
     @Override
     <S extends Product> S save(S s);
 }

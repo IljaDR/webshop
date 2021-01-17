@@ -1,8 +1,7 @@
 package be.petshop.webshop.models;
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
-
 import javax.persistence.*;
+import java.util.List;
 
 @Entity
 public class Product {
@@ -11,13 +10,18 @@ public class Product {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private int productID;
     private String name;
+    private double price;
     private int stock;
     private String description;
     private String picture;
 
-    @ManyToOne
-    @JoinColumn(name = "category", nullable = false)
-    private Category category;
+    @ManyToMany
+    @JoinTable(name = "product_category", joinColumns = @JoinColumn(name = "productID"),
+            inverseJoinColumns = @JoinColumn(name = "categoryID"))
+    private List<Category> categories;
+
+
+
 
     public Product() {
     }
@@ -36,6 +40,14 @@ public class Product {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public double getPrice() {
+        return price;
+    }
+
+    public void setPrice(double price) {
+        this.price = price;
     }
 
     public int getStock() {
@@ -62,11 +74,11 @@ public class Product {
         this.picture = picture;
     }
 
-    public Category getCategory() {
-        return category;
+    public List<Category> getCategories() {
+        return categories;
     }
 
-    public void setCategory(Category category) {
-        this.category = category;
+    public void setCategories(List<Category> categories) {
+        this.categories = categories;
     }
 }

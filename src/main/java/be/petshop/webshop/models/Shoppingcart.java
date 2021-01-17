@@ -1,9 +1,7 @@
 package be.petshop.webshop.models;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
+import java.util.List;
 
 @Entity
 public class Shoppingcart {
@@ -14,10 +12,10 @@ public class Shoppingcart {
     private int userID;
     private String status;
 
-    public Shoppingcart(int userID, String status) {
-        this.userID = userID;
-        this.status = status;
-    }
+    @ManyToMany
+    @JoinTable(name = "shoppingcart_product", joinColumns = @JoinColumn(name = "productID"),
+            inverseJoinColumns = @JoinColumn(name = "shoppingcartID"))
+    private List<Product> products;
 
     public Shoppingcart() {
     }
@@ -44,5 +42,13 @@ public class Shoppingcart {
 
     public void setStatus(String status) {
         this.status = status;
+    }
+
+    public List<Product> getProducts() {
+        return products;
+    }
+
+    public void setProducts(List<Product> products) {
+        this.products = products;
     }
 }
