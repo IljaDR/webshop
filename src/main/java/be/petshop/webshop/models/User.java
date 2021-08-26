@@ -1,9 +1,6 @@
 package be.petshop.webshop.models;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.Pattern;
 
@@ -14,6 +11,8 @@ public class User {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private int userID;
     private String hash;
+
+    @Transient
     private String password;
 
     @NotBlank(message = "Name cannot be empty.")
@@ -23,8 +22,8 @@ public class User {
     private String family_name;
 
     @Pattern(regexp="^[A-Z0-9+_.-]+@[A-Z0-9.-]+$")
-    @NotBlank(message = "Name cannot be empty.")
-    private String emailaddress;
+    @NotBlank(message = "Email cannot be empty.")
+    private String email;
     private String address;
     private String payment_info;
 
@@ -71,12 +70,12 @@ public class User {
         this.family_name = family_name;
     }
 
-    public String getEmailaddress() {
-        return emailaddress;
+    public String getemail() {
+        return email;
     }
 
-    public void setEmailaddress(String emailaddress) {
-        this.emailaddress = emailaddress;
+    public void setemail(String email) {
+        this.email = email;
     }
 
     public String getAddress() {

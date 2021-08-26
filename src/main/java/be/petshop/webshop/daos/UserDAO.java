@@ -12,5 +12,5 @@ public interface UserDAO extends CrudRepository<User, Integer> {
     @Override
     Iterable<User> findAll();
 
-    Optional<User> findByEmailaddress(String email);
+    Optional<User> findByEmail(String email);
 }

@@ -46,7 +46,7 @@ public class UserController {
             return "register";
         }
 
-        Optional<User> check = dao.findByEmailaddress(user.getEmailaddress());
+        Optional<User> check = dao.findByEmail(user.getemail());
 
         //If a user is found with this email, it means they already have an account
         if (check.isPresent()) {

@@ -11,7 +11,7 @@ public class Product {
     private int productID;
     private String name;
     private double price;
-    private int stock;
+    private Integer stock;
     private String description;
     private String picture;
 

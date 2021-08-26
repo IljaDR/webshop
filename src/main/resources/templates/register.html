@@ -36,9 +36,9 @@
 
             <div class="form-group">
                 <label>Last name</label>
-                <input type="text" class="form-control" name="emailaddress" th:field="*{emailaddress}">
-                <div th:if="${#fields.hasErrors('emailaddress')}">
-                    <p th:errors="*{emailaddress}"></p>
+                <input type="text" class="form-control" name="email" th:field="*{email}">
+                <div th:if="${#fields.hasErrors('email')}">
+                    <p th:errors="*{email}"></p>
                 </div>
             </div>
 
