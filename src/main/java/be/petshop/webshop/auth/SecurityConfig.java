@@ -29,6 +29,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .anyRequest().authenticated()
                 .and()
                 .formLogin().loginPage("/login")
+                // for some reason it doesn't want to redirect to index on first successful attempt
                 .permitAll().defaultSuccessUrl("/").failureUrl("/login?message=incorrect credentials")
                 .and()
                 .logout().permitAll()

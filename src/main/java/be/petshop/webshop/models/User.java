@@ -18,7 +18,7 @@ public class User {
     @NotBlank(message = "Name cannot be empty.")
     private String first_name;
 
-    @NotBlank(message = "Name cannot be empty.")
+    @NotBlank(message = "Family name cannot be empty.")
     private String family_name;
 
     @NotBlank(message = "Username cannot be empty.")

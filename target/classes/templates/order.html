@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head th:replace="fragments :: header">
+</head>
+
+<body>
+
+<nav th:replace="fragments :: navbar"></nav>
+
+<!-- Page Content -->
+<div class="container">
+
+    <div class="row">
+        <h1>Checkout</h1>
+        <br />
+        <div style="overflow: auto">
+            <h5 th:text="'Total price: ' + ${price}" style="width: auto; float: left"></h5>
+            <div style="float: right; width: auto">
+                <input type="radio" name="paymentOption" value="Dollaridoos">
+                <label>Dollaridoos</label><br>
+                <input type="radio" name="paymentOption" value="Dogecoin">
+                <label>Dogecoin</label><br>
+                <input type="radio" name="paymentOption" value="Zimbabwean dollar">
+                <label>Zimbabwean Dollar</label><br>
+            </div>
+            <a href="/checkout" style="float: left; width: 100%">Go to checkout</a>
+        </div>
+    </div>
+    <!-- /.row -->
+
+</div>
+<!-- /.container -->
+
+<!-- Footer -->
+<footer th:replace="fragments :: footing">
+
+</footer>
+
+<!-- Bootstrap core JavaScript -->
+<script src="vendor/jquery/jquery.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
