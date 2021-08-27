@@ -21,9 +21,8 @@ public class User {
     @NotBlank(message = "Name cannot be empty.")
     private String family_name;
 
-    @Pattern(regexp="^[A-Z0-9+_.-]+@[A-Z0-9.-]+$")
-    @NotBlank(message = "Email cannot be empty.")
-    private String email;
+    @NotBlank(message = "Username cannot be empty.")
+    private String username;
     private String address;
     private String payment_info;
 
@@ -70,12 +69,12 @@ public class User {
         this.family_name = family_name;
     }
 
-    public String getemail() {
-        return email;
+    public String getUsername() {
+        return username;
     }
 
-    public void setemail(String email) {
-        this.email = email;
+    public void setUsername(String username) {
+        this.username = username;
     }
 
     public String getAddress() {

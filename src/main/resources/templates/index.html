@@ -35,7 +35,7 @@
               <a href="#"><img class="card-img-top" th:src="${product.picture}" style="height: 200px"></a>
               <div class="card-body">
                 <h4 class="card-title">
-                  <a href="#" th:text="${product.name}"></a>
+                  <a th:href="'/cart?id=' + ${product.productID} " th:text="${product.name}"></a>
                 </h4>
                 <h5 th:text="${product.price}"></h5>
                 <p class="card-text" th:text="${product.description}"></p>

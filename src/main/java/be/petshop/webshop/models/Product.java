@@ -20,9 +20,6 @@ public class Product {
             inverseJoinColumns = @JoinColumn(name = "categoryID"))
     private List<Category> categories;
 
-
-
-
     public Product() {
     }
 
