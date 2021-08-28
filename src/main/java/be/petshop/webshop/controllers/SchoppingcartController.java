@@ -35,10 +35,12 @@ public class SchoppingcartController {
         Shoppingcart shoppingcart;
         // if this user does not have a shopping cart yet
         if(shoppingcartList.isEmpty()){
+            // create shopping cart
             shoppingcart = new Shoppingcart();
             shoppingcart.setUserID(user.getUserID());
         }
         else{
+            // get existing shopping cart and calculate the total price
             shoppingcart = shoppingcartList.get(0);
             for (Product product: shoppingcart.getProducts()){
                 totalPrice += product.getPrice();
@@ -49,6 +51,7 @@ public class SchoppingcartController {
         if(productID != null){
             Optional<Product> product = productDAO.findById(productID);
             List<Product> shoppingcartproducts = shoppingcart.getProducts();
+            // make a list of products if it doesn't exist yet
             if(shoppingcartproducts == null){
                 List<Product> tempProducts = new ArrayList<Product>();
                 tempProducts.add(product.get());
